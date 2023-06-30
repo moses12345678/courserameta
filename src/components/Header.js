@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { Link, Redirect } from "react-router-dom";
 import Logo from '../images/Logo.svg';
 
 const Header = () => {
@@ -8,22 +9,24 @@ const Header = () => {
       <img src={Logo} alt="logo" />
       <ul>
         <li>
-          <a href="/home">Home</a>
+          <a href="/">Home</a>
+          
         </li>
         <li>
-          <a href="/about">About</a>
+        <Link to="/">About</Link>
         </li>
         <li>
-          <a href="/menu">Menu</a>
+          
+          <Link to="/">Menu</Link>
         </li>
         <li>
-          <a href="/reservations">Reservations</a>
+             <Link to="/booking">Reservations</Link>
         </li>
         <li>
-          <a href="/online">Order Online</a>
+              <Link to="/">Online Order</Link>
         </li>
         <li>
-          <a href="/login">Login</a>
+              <Link to="/">Login</Link>
         </li>
       </ul>
     </nav>
