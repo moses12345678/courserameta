@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
-
+import { useNavigate } from 'react-router-dom';
+import ConfirmedBooking from './ConfirmedBooking';
 const BookingForm = () => {
+  const navigate = useNavigate();
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
   const [guests, setGuests] = useState('');
@@ -32,7 +34,7 @@ const BookingForm = () => {
       occasion,
     };
 
-    fetch('your_local_storage_api_endpoint', {
+    fetch('https://meanc4.azurewebsites.net/meanc/reservations/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -42,6 +44,7 @@ const BookingForm = () => {
       .then((response) => response.json())
       .then((data) => {
         console.log('Reservation submitted successfully:', data);
+        navigate('/confirmation')
         // Perform any additional actions after successful reservation submission
       })
       .catch((error) => {

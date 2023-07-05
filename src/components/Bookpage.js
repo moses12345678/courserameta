@@ -6,12 +6,13 @@ import Nav from "./Nav";
 import  './Style.css'; //Import the css file
 
 const Bookpage = () => {
-    
+
   return (
     <div>
        <Nav />
-       <h1>Bookpage</h1>
+       <div style={{ marginTop: '45px' }}>
         <BookingForm />
+      </div>
       <Footer />
     </div>
   );
