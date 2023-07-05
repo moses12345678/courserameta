@@ -1,35 +1,168 @@
-nav {
-    background-color: #f5f5f5;
-    padding: 10px;
-  }
-  
-  ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  li {
-    margin-right: 10px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+/* Begin CSS Nav */
+.nav1 {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.nav1 img {
+  width: 100px;
+  height: auto;
+}
+
+.nav2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  margin-top: -55px;
+  margin-bottom: -18px;
+}
+
+.nav2 ul {
+  list-style: none;
+  display: flex;
+  gap: 40px; /* Add space between list items */
+}
+
+.nav2 li {
+  margin-right: 10px;
+}
+
+.nav2 a {
+  color: #495E57;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hamburger Icon Styles */
+.hamburger {
+  display: none; /* Hide by default for larger screens */
+}
+
+.hamburger-label {
+  display: none; /* Hide by default for larger screens */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav2 {
+    flex-direction: column;
+    align-items: flex-end;
   }
 
+  .nav2 ul {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .nav2 li {
+    margin-bottom: 10px;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+  }
+
+  .hamburger-label {
+    display: block;
+    cursor: pointer;
+    padding: 5px;
+    background-color: transparent;
+  }
+}
+/* End CSS Nav */
   .booking-form {
     background-color: #f5f5f5;
     padding: 20px;
     border-radius: 8px;
   }
-  
   .booking-form label {
     display: block;
     margin-bottom: 10px;
   }
-  
+  /* Begin CSS Section */
+section[role="banner"] {
+  display: flex;
+  background-color: #495E57;
+  height: 554px;
+}
+
+section[role="banner"] > div {
+  flex: 1;
+  padding: 20px;
+  color: white;
+}
+.section1{
+  margin-left: 74px;
+}
+section[role="banner"] h1 {
+  font-size: 32px;
+  margin: 0;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+section[role="banner"] h3 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+section[role="banner"] p {
+  font-size: 16px;
+}
+
+section[role="banner"] button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #F4CE14;
+  color: black;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+section[role="banner"] > div:last-child {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section[role="banner"] img {
+  width: 381px;
+  height: 534px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-top: 60px; /* Adjust the value as needed */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  section[role="banner"] {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  section[role="banner"] > div {
+    margin-bottom: 20px;
+  }
+
+  section[role="banner"] img {
+    width: 100%;
+    height: auto;
+    max-width: 381px;
+    max-height: 534px;
+  }
+}
+/* End CSS Section */
+
+/* Begin CSS Booking */
   .booking-form input,
   .booking-form select {
     width: 100%;
@@ -38,7 +171,7 @@ nav {
     border-radius: 4px;
     margin-top: 5px;
   }
-  
+/* End CSS Booking */ 
   .booking-form button {
     background-color: #4caf50;
     color: white;
@@ -46,9 +179,103 @@ nav {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    
   }
   
   .booking-form button:hover {
     background-color: #45a049;
   }
+  /* Begin css sepcialComponenet */ 
+  .section-special {
+    margin-top: 53px;
+    padding: 20px;
+  }
   
+  .top-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #F4CE14;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .card h2 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .card p {
+    font-size: 14px;
+  }
+/* End css sepcialComponenet */ 
+
+/* Begin CSS Footer */
+.footer {
+  background-color:black;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  height: 560px;
+  justify-content: space-between;
+}
+
+.footer-img img {
+  width: 100px;
+  height: auto;
+}
+
+.footer-text {
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.footer-text p {
+  margin: 0 10px;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+}
+
+.social-media p {
+  margin: 0;
+}
+/* End CSS Footer */
+
+

@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Bookpage from './components/Bookpage';
 import Home from './components/Home';
+import ConfirmedBooking from './components/ConfirmedBooking';
 import  './Style.css'; //Import the css file
 //import { AlertProvider } from "./context/alertContext";
 //import Alert from "./components/Alert";
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" exact element={<Home />}/>
         <Route path="/booking" exact element={<Bookpage />}/>
+        <Route path="/confirmation" exact element={<ConfirmedBooking/>}/>
       </Routes>
     </Router>
   );
