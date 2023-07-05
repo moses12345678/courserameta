@@ -1,7 +1,6 @@
 # courserameta
 ## THE API
-I implemented my backend wich is online in order to make the API fecth easy
-here the link: https://meanc4.azurewebsites.net/meanc/reservations/
+I implemented my online backend to make fetching data from the API easier. Here is the link: https://meanc4.azurewebsites.net/meanc/reservations/
 # Unit test
 find the unit test on the App.test.js
 ## Sementic
