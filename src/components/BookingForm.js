@@ -55,11 +55,11 @@ const BookingForm = () => {
 
   // Function to check if any form input fields are invalid
   const isFormInvalid = () => {
-    return !date && !time && !guests && !occasion;
+    return !date || !time || !guests || !occasion;
   };
 
   return (
-    <div className="booking-form">
+    <div className="booking-form" aria-label="Booking Form">
       <h2>Booking Form</h2>
       <form onSubmit={handleSubmit}>
         <label>
@@ -72,8 +72,7 @@ const BookingForm = () => {
               // Step 5: Dispatch state change when the date is changed
               setAvailableTimes(updateTimes());
             }}
-            required // HTML5 validation for required field
-          />
+            required />
         </label>
         <br />
         <label htmlFor="res-time">Choose time</label>

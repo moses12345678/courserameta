@@ -10,7 +10,7 @@ const Bookpage = () => {
   return (
     <div>
        <Nav />
-       <div style={{ marginTop: '45px' }}>
+       <div style={{ marginTop: '45px', marginBottom:'34px' }}>
         <BookingForm />
       </div>
       <Footer />

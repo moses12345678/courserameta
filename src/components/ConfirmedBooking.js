@@ -8,10 +8,10 @@ const ConfirmedBooking = () => {
     navigate('/booking');
   };
   return (
-    <div className="confirmed-booking">
+    <div className="confirmed-booking" aria-label="Confirmed Booking">
       <h2>Booking Confirmed</h2>
       <p>Your booking has been successfully confirmed.</p>
-      <button onClick={handleButtonClick}>Go to Back</button>
+      <button onClick={handleButtonClick} aria-label="Go to Back">Go to Back</button>
     </div>
   );
 };

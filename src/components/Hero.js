@@ -18,13 +18,13 @@ export default function Hero(){
             <div className="section1">
             <h1 style={{color:'#F4CE14'}}>Little Lemon</h1>
             <h3>Chicago</h3>
-            <p>Lorem Ipsum is simply dummy text of the <br />
-                printing and typesetting industry. <br />
-                Lorem Ipsum has been the industry's <br />
-                standard dummy text ever since the 1500s, when an<br /> 
-                unknown printer took a galley of<br /> 
-                type and scrambled it to make a<br /> 
-                type specimen book</p>
+            <p style={{ textAlign: 'left', fontSize: '16px' }}>
+                We are family owned <br />
+                Mediterranean restaurant, <br />
+                focused on traditional <br />
+                recipes served with a modern<br /> 
+                twist<br /> 
+            </p>
             <button onClick={handleReserve}
                 style={{
                     backgroundColor: '#F4CE14',

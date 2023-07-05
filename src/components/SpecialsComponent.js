@@ -7,7 +7,7 @@ import { faTruck } from "@fortawesome/free-solid-svg-icons";
 
 const SpecialsComponent = () => {
   return (
-    <section className='section-special'>
+    <section className='section-special' aria-label="This Week's Special">
       <div className="top-section">
         <h1>This Week's Special!</h1>
         <button>Online Menu</button>
